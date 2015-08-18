@@ -1,0 +1,270 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	
+	<header>
+		<div id="logo"><i class="fa fa-desktop"></i></div>
+
+		<div id="bars"><i class="fa fa-bars"></i></div>
+
+		<ul id="nav">
+			<li> <a href="">Services</a></li>
+			<li> <a href="">Our Work</a></li>
+			<li> <a href="">Enquirys</a></li>
+			<li> <a href="">Contact</a></li>
+		
+		</ul>
+	</header>
+	
+
+
+
+
+	<main>
+
+	<div class="landing">
+		<h2 class="landingName">Net in Sites</h2>
+
+		<img src="images/bannerWebDesign.jpg" class="banner">
+
+	</div>
+	<!-- end of landing -->
+
+	
+	<div class="ourServices">
+		<div class="dropyDown servicesDropDown">
+
+			<h3  class=" frameTwo">Services</h3>
+
+  			<a class="btn btn-stroke-black borderBottomGrey frameOne " >Services</a>
+		</div>
+
+		<div class="frameTwoBorder"></div>
+
+
+		<ul id="servicesMover"class="serviceCircles">
+			<li ><img src="images/consulting.png"> <span>Consulting</span> </li>
+			<li><img src="images/eCommerce.png"> <span>E-Commerce</span> </li>
+			<li><img src="images/websights.png"> <span>Web Devlopment</span> </li>
+			<li><img src="images/marketing.png"> <span>Marketing Headstart</span> </li>
+		</ul>
+
+	</div>
+	<!-- end of Services -->
+
+
+	<div class="">
+
+		<div class="dropyDown">
+  
+		<h3  class="borderBottomGrey frameTwo ">Our Work</h3>
+
+  		<a class="btn btn-stroke-black borderBottomGrey frameOne" id="ourWork">Our Work</a>
+	</div>
+
+	<div class="frameTwoBorder"></div>
+
+	<!-- <div> -->
+	<ul id="ourWorkList">
+		<li><img src="images/silverstrip.jpg"> 
+
+
+
+		</li>
+		<li><img src="images/blueHealth.jpg"> </li>
+		<li><img src="images/rotaryInternational.jpg">  </li>
+		<li><img src="images/bankOfSamoa.jpg"> </li>
+	</ul>
+
+
+	<!-- </div> -->
+	<!-- end of Our Work -->
+
+
+
+<div class="frameTwoFlex">
+		
+
+<div class="twoFlex borderRight">
+		
+	<div class="dropyDown ">
+ 
+		<h3  class="borderBottomGrey frameTwo ">Enquirys</h3>
+	 	<a class="btn btn-stroke-black borderBottomGrey enquirys " >Enquirys</a>
+
+	</div>
+
+	<div class="frameTwoBorder"></div>
+
+	<div id="formContainer">
+			<span class="enquireSubhead" >To Enquire please fill in the form below:</span>
+
+			<center>
+			<form class="pure-form formWidth">
+   			 <fieldset class="pure-group">
+       		 <input type="text" class="pure-input-1-2" placeholder="First Name">
+		     <input type="text" class="pure-input-1-2" placeholder="Last Name">
+		     <input type="email" class="pure-input-1-2" placeholder="Email">
+		    </fieldset>
+
+		    <fieldset class="pure-group">
+		        
+		        <textarea class="pure-input-1-2" placeholder="message"></textarea>
+		    </fieldset>
+
+   			 <button type="submit" class="pure-button ghst-btn">Send</button>
+			</form>
+			</center>
+
+	</div>
+
+</div>
+	<!-- end of Enquirys -->
+	
+
+	<div class="contact twoFlex">
+	
+	<div class="dropyDown contactUs">
+
+		<h3 class="borderBottomGrey frameTwo contactH3">Contact</h3>
+ 	
+ 		 <a class="btn btn-stroke-black borderBottomGrey frameOne " >Contact</a>
+	</div>
+
+		<div class="frameTwoBorder"></div>
+
+
+	<div id="contactSlider" class="bothContacts">
+			
+			<div class="contactOne"><h5 class="block">Alex Garden</h5>
+
+				<span class="block"><i class="fa fa-phone"></i>  64 9 273 6094</span>
+
+				<span class="block"><i class="fa fa-mobile"></i>   64 21 676 965</span>
+
+				<span class="block"><i class="fa fa-map-marker"></i>  81 Westerham Drive</span>
+
+				<span class="block leftMarginDannemora">Dannemora </span>	
+			</div>
+ 
+	<div class="contactTwo">
+			<h5 class="block">Natalie Pike</h5>
+			<span class="block endOfSite"><i class="fa fa-mobile"></i> 64 21 495 766</span>
+
+	</div> <!-- end of contact two -->
+	
+	</div> <!-- end of contact container -->
+	
+
+	</div><!-- end of contact-->
+	
+
+
+
+</div> <!-- end of frame two flexing -->
+
+
+
+	</main>
+
+
+
+
+
+
+	<footer > All rights reserved.2015 NetinSites Inc.</footer>
+
+	<script type="text/javascript">
+	var bars = document.querySelector("#bars");
+	var nav = document.querySelector("#nav");
+
+	bars.onclick = function(){
+		if(nav.className == ""){
+			nav.className = "show";
+		}else{
+			nav.className = "";
+		}
+	}
+
+
+	</script>
+
+
+	<script type="text/javascript">
+	var ourWork = document.querySelector("#ourWork");
+	var ourWorkList = document.querySelector("#ourWorkList");
+
+	ourWork.onclick = function(){
+		if(ourWorkList.className == ""){
+			ourWorkList.className= "show"
+		}else{
+			ourWorkList.className="";
+		}
+	}
+
+
+
+	</script>
+
+
+		<script type="text/javascript">
+	var enquirys = document.querySelector(".enquirys");
+	var formContainer = document.querySelector("#formContainer");
+
+	enquirys.onclick = function(){
+		if(formContainer.className == ""){
+			formContainer.className= "show"
+		}else{
+			formContainer.className="";
+		}
+	}
+
+
+
+	</script>
+
+
+<!-- 
+		// var contactUs = document.querySelector(".contactUs");
+	// var contactSlider = document.querySelector("#contactSlider");
+
+	// contactUs.onclick = function(){
+	// 	if(contactSlider.className == ""){
+	// 		contactSlider.className= "show"
+	// 	}else{
+	// 		contactSlider.className="";
+	// 	}
+	// } -->
+	
+
+
+	
+
+
+
+<!-- 
+// <script>
+	 
+	var servicesDropDown = document.querySelector(".servicesDropDown");
+	 var servicesMover = document.querySelector("#servicesMover");
+
+	servicesDropDown.onclick = function(){
+	if(servicesMover.className == ""){
+			servicesMover.className= "show"
+ 	}else{
+			servicesMover.className="";
+		}
+	 }
+</script>
+	// } -->
+
+
+
+</body>
+
+</html>

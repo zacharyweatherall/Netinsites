@@ -1,0 +1,729 @@
+
+/*for mobile - inclusive*/
+body{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+header{
+	background-color:#2f517b;
+	flex: 0 0 content;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+
+}
+#logo, #bars{
+	flex: 0 0 2em;
+	height: 2em;
+	text-align: center;
+
+}
+#bars i, #logo i{
+	line-height: 2em;
+}
+
+#nav{
+	flex: 0 0 100%;
+
+	height: 0;
+	margin: 0;
+	padding: 0;
+	background-color:#2f517b;
+	overflow: hidden;
+	transition: all 0.5s ease;
+	list-style-type: none;
+	
+
+}
+
+#nav.show{
+	height: 10em;
+	padding-top:2em ;
+}
+
+#nav li{
+	height: 2em;
+}
+#nav li a{
+	display: block;
+	text-align: center;
+	line-height: 2em;
+text-decoration: none;
+color: #BBB;
+
+}
+
+
+
+main{
+	background-color:#fff;
+	flex: 1 0 auto ;
+}
+
+footer{
+	/*background-color: rgba(255,255,0,0.1);*/
+	flex: 0 0 2em ;
+	font-size: 0.8em;
+	border-top:thin #BBB solid;
+}
+
+
+
+/*-------------------------------  LANDING -->*/
+
+
+.landing{
+	position: relative;
+
+/*height: 12.5em;	*/
+/*position: absolute;*/
+
+
+/*background-color: rgba(21,148,162,0.2);*//* not too keen on*/
+/*border-radius: 60%;*/
+}
+
+.landing img{
+	display: none;
+}
+
+.landing h2{
+	text-align: center;
+
+}
+
+/*
+.banner{
+display: inline;
+top:0;
+left:0;
+height:12.5em;
+overflow: hidden;
+width :100%;
+
+}
+*/
+
+
+
+.landingName{
+	color: #2f517b;
+	padding-top: 2em;
+	border-bottom:thin #BBB solid;
+}
+
+.borderBottomGrey{
+	border-bottom:thin #BBB solid;
+}
+
+
+/*.formWidth{
+	width:20em;
+}*/
+
+h1,h2,h3,h4,h5,h6,a {
+    font-family: 'Patua One', serif;
+    letter-spacing: 0.1em;
+}
+
+span {
+    font-family: 'Source Sans Pro', sans-serif;
+ /*   font-weight: 300;*/
+ font-size: 0.8em;
+}
+
+
+
+/*-------------------------------  OUR SERVICES -->*/
+
+
+
+.serviceCircles{
+	list-style-type: none;
+
+}
+
+
+
+.serviceCircles{
+	display: flex;
+	flex-wrap:wrap;
+	/*justify-content:space-between;*/
+	list-style-type: none;
+	text-decoration: none;
+	/*border:1px green solid;*/
+	text-align: center;
+
+}
+
+.serviceCircles li{
+	flex: 1 0 40% ;
+	margin-left: -1.2em;
+	margin-bottom: 2em;		 /*too change with size*/
+}
+
+.serviceCircles li span{
+	display: block;
+	margin-top: 1em;
+	font-size: 0.8em;
+	/*border:1px green solid;*/
+}
+
+
+/*.Child{
+margin-left: 1em;
+}*/
+
+/*#servicesMover{
+			overflow: hidden;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	transition: all 0.8s ease;
+}
+
+#servicesMover.show{
+	height: 20em;
+
+}*/
+
+
+
+/*-------------------------------  OUR WORK -->*/
+
+#ourWork.show{
+	height: 10em;
+}
+
+
+
+#ourWorkList{
+	display: flex;
+	flex-wrap:wrap;
+	/*justify-content:space-between;*/
+	list-style-type: none;
+	text-decoration: none;
+	/*border:1px blue solid;*/
+	text-align: center;
+	overflow: hidden;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	transition: all 0.8s ease;
+}
+
+#ourWorkList li{
+	flex: 1 0 90% ;
+	padding-bottom: -2em;
+	/*max-height: 5em;*/
+	/*margin-bottom: 2em;*/
+}
+
+#ourWorkList li img{
+	width: 20em;
+	height:auto;				/*too change with size*/
+	margin-left: -2em;
+	margin-bottom: 1em;
+	border:thin #BBB solid;
+	/*margin-bottom: 2em;*/
+}
+
+
+#ourWorkList li span{
+	/*display:none;*/
+	display: block;
+	font-size: 0.9em;
+}
+
+
+#ourWorkList.show{
+	height: 80em;
+
+}
+
+
+
+
+
+/*-------------------------------  ENQUIRE -->*/
+
+.frameTwo{
+	display: none;
+}
+
+.enquireSubhead{
+	display:block;
+	border-bottom:3em;
+	margin-bottom: 3em;
+}
+
+
+
+
+.ghst-btn {
+	margin-top: 2em;
+	margin-bottom: 2em;
+  position: relative;
+  display: inline-block;
+  top: 35%;
+  width: auto;
+  height: auto;
+  max-width: 20rem;
+  min-height: 1rem;
+  padding: 1rem 2rem 0.8rem 2rem;
+  border: 2px solid #2f517b;
+  background-color: #fff;
+  background-image:
+    radial-gradient(#333 0%, #333 70%, transparent 71%, transparent 100%),
+    radial-gradient(#333 0%, #333 70%, transparent 71%, transparent 100%),
+    radial-gradient(#333 0%, #333 70%, transparent 71%, transparent 100%);
+  background-size: 0 0, 0 0, 0 0;
+  background-repeat: no-repeat;
+  background-position: 30% 50%, 70% 50%, 50% 80%;
+  text-decoration: none;
+  color: #2f517b;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  border-radius: 0;
+  transform: rotate(0);
+  transition:
+    border 2.5s 1s,
+    color 2s 0.6s,
+    max-width 0.05s 0.6s, 
+    min-height 0.05s 0.6s, 
+    background-color 0.4s,
+    background-size 0s,
+    transform 0.4s,
+    border-radius 0.4s;
+}
+.ghst-btn:hover {
+  max-width: 10rem;
+  min-height: 10rem;
+  color: rgba(255,255,255,0);
+  border: 2px solid rgba(255,255,255,0);
+  border-radius: 50%;
+  background-color:#2f517b;
+  background-size: 1.5rem 1.5rem, 1.5rem 1.5rem, 1.5rem 1rem;
+  transform: rotate(400grad);
+  transition:
+    border 0.1s,
+    color 0.15s,
+    max-width 0.25s, 
+    min-height 0.25s, 
+    background-color 0.25s,
+    background-size 0.15s 0.45s,
+    transform 0.4s,
+    border-radius 0.25s 0.3s;
+}
+.ghst-btn:before,
+.ghst-btn:after {
+  position: absolute;
+  transition: all 0.25s;
+}
+.ghst-btn:before {
+  content:'send';
+
+
+
+  top: 72%;
+  left: -19%;
+  color: rgba(255,255,255,0.3);
+  font-weight: 800;
+  letter-spacing: 0;
+  transform: scale(0) translateX(0) translateY(0);
+  transition:
+    color 0s,
+    transform 0s;
+}
+.ghst-btn:after {
+  content:'';
+  top: 70%;
+  left: 20%;
+  width: 60%;
+  height: 7%;
+  background: none;
+  border-radius: 50%;
+  box-shadow: 0 5rem 15px rgba(0,0,0,0.15);
+  opacity: 0;
+  transition: opacity 0.05s;
+}
+.ghst-btn:hover:before {
+  color: rgba(255,255,255,0.3);
+  transform: scale(1.3) translateX(55%) translateY(-110%);
+  transition:
+    color 0.05s 0.8s,
+    transform 0.1s 0.8s;
+}
+.ghst-btn:hover:after {
+  opacity: 1;
+  transition: opacity 0.2s 0.5s;
+}
+
+
+
+
+#formContainer{
+		overflow: hidden;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	transition: all 0.8s ease;
+
+}
+
+#formContainer.show{
+	height: 30em;
+
+}
+
+
+
+
+
+
+/*-------------------------------  CONTACT -->*/
+
+.block{
+	display: block;
+	margin-left: 2em;
+	color:#2f517b;;
+
+}
+
+.endOfSite{
+	margin-bottom: 5em;
+}
+
+
+
+.bothContacts{
+	display: flex;
+}
+
+
+/*#contactSlider{
+			overflow: hidden;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	transition: all 0.8s ease;
+}
+
+#contactSlider.show{
+	height: 15em;
+
+}
+*/
+
+.leftMarginDannemora{
+	margin-left: 3em;
+}
+
+/*-------------------------------  DropDownButtons -->*/
+
+
+/*.extendButton{}*/
+
+
+.dropyDown{
+ margin: 0 auto;
+  width: 80%;
+  margin-bottom: 2em;
+  margin-left:  1em;
+}
+
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.btn {
+  display: block;
+  font-family: Helvetica, Arial;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.8em 0.9em;
+  letter-spacing: 2px;
+  font-size: 12px;
+  white-space: normal;  
+}
+
+.btn-stroke-black {
+  background-color: transparent;
+  color: #0d0d0e !important;
+  border: 2px solid #0d0d0e;
+  width:100%;
+}
+
+.btn-stroke-black:hover {
+  background-color: #0d0d0e;
+  color: white !important;  
+}
+
+
+
+
+
+/*for phablet - inclusive*/
+@media only screen and (min-width : 24em) {
+
+	#bars{
+		display: none;
+	}
+	#nav{
+
+		flex:1 0 50%;
+		height: 2em;
+		display: flex;
+		justify-content: space-around;
+	}
+
+
+
+.ourServices li {
+	
+	flex: 1 0 45%;
+	
+}
+
+
+
+
+
+#ourWorkList{
+overflow:visible;
+/*display: flex;	*/
+height: 55em;
+/*display: block;*/
+
+
+}
+
+
+
+/*#ourWorkList li{
+
+flex: 1 0 40%;
+outline 1px yellow solid;
+
+}*/
+
+
+
+
+
+.bothContacts{
+	flex: 1 0 40%;
+}
+
+
+
+.contactOne{
+margin-left: 25%;
+
+}
+
+
+
+.contactTwo{
+	margin-left: 5%;
+}
+
+
+
+
+
+.landing img{
+	display: block;
+	width: 100%;
+}
+
+.landing h2{
+
+	position: absolute;
+	width: 100%;
+}
+
+/*#formContainer.show{
+	height: 35em;
+
+}*/
+
+
+
+.enquirys{
+	display:none;
+}
+
+
+
+.frameOne{
+	display:none;
+}
+
+/*
+#ourWorkList{
+overflow:visible;
+display:flex;
+}*/
+
+
+
+#formContainer{
+overflow:visible;
+display:inline;
+}
+
+.frameTwo{
+	display:block;
+	position: static;
+	/*background-color: red*/
+font-size: 1.5em;
+/*margin-top: 4em;*/
+color: #2f517b;
+margin-left: 55%;
+/*text-align: center;
+margin-left: 3em;*/
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+.dropyDown{
+	display: inline-block;
+	/* margin-left:2em;*/
+  /*width: 80%;*/
+  margin-bottom: 4em;
+/*  margin-left:  1em;*/
+}
+
+
+
+.borderBottomGrey{
+	border-bottom: 0em solid black;
+}
+
+
+
+
+.frameTwoBorder{
+	border-bottom: thin solid #BBB;
+	width:100%;
+	margin-bottom: 2em;
+	margin-top: -4em;
+}
+
+
+
+
+
+
+
+
+
+
+} /*END OF MIN 24 EM*/
+
+
+
+
+
+
+
+
+
+/*for tablet - inclusive*/
+@media only screen and (min-width : 44em) {
+
+.ourServices li {
+	
+	flex: 1 0 20%;
+	
+}
+
+
+
+
+.frameTwoFlex{
+	/*outline:4px red solid;*/
+	display:flex;
+	
+}
+
+
+
+.twoFlex{
+	/*display: static;*/
+	/*outline:4px blue solid;*/
+	flex: 1 0 45%;
+}
+
+
+
+
+.borderRight{
+	border-right: thin solid #BBB;
+}
+
+
+html{
+	max-width: 100em;
+}
+
+
+
+
+#ourWorkList li{
+
+flex: 1 0 40%;
+flex:space-between;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*for destop - inclusive*/
+@media only screen and (min-width : 64em) {
+
+}
